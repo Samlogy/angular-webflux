@@ -1,0 +1,28 @@
+{
+  "Users": [
+    {
+      "id": "2",
+      "name": "sam",
+      "username": "sam",
+      "email": "sam@gmail.com"
+    },
+    {
+      "name": "Vivek",
+      "username": "vivek",
+      "email": "vivek@gmail.com",
+      "id": "3"
+    },
+    {
+      "id": "eac8",
+      "name": "gile",
+      "username": "gile",
+      "email": "gile@gmail.com"
+    },
+    {
+      "id": "2916",
+      "name": "ss2",
+      "username": "ss2",
+      "email": "ss@g.c"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+
+
+spring:
+  application:
+    name: product-service
+
+  data:
+    mongodb:
+      uri: mongodb://mongo-service:27017/api-poc
+
+  profiles:
+    active: test

@@ -1,0 +1,16 @@
+spring:
+  r2dbc:
+    password: password
+    url: r2dbc:postgresql://localhost:5432/mydb
+    username: myuser
+
+#logging:
+#  level:
+#    org:
+#      springframework: INFO
+#    com:
+#      example:
+#        product: DEBUG
+#    root: DEBUG
+#  pattern:
+#    console: '%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n'
