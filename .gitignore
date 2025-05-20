@@ -1,0 +1,9 @@
+/eda/react-app/node_modules
+
+eda/order/target
+eda/product/target
+spring-batch/target
+spring-testcontainers/build
+
+micro-webflux/tutorial/target
+micro-webflux/product/target
