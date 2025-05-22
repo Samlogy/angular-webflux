@@ -2,17 +2,75 @@
 
 **TODOS:**
 
-comment cree une architecture microservices en spring webflux ?
-quels sont les challenges ? explique le processus de mise en place ?
 
-spring security comment ca marche ? fonctionnement ?
-spring security avec spring webflux
+Java/Angular resources:
 
-spring batch compatibilité avec  webflux ?
+**webflux:**
+https://github.com/Samlogy/java-projects
+https://github.com/tamani-coding/spring-boot-webflux-r2dbc-postgrest-example
 
-kafka cest quoi ? concepts importants ?
-quand faut-il l'utilisé ?
-comment l'implemente avec webflux ?
+
+**test containers:**
+https://github.com/testcontainers/tc-guide-testing-spring-boot-rest-api
+https://github.com/testcontainers/testcontainers-java-spring-boot-quickstart
+https://testcontainers.com/guides/testing-spring-boot-rest-api-using-testcontainers/
+https://dextrop.medium.com/containerizing-a-angular-application-using-docker-a71968269821
+https://bell-sw.com/blog/how-to-use-testcontainers-with-spring-boot-applications-for-integration-testing/
+
+
+**webflux angular keycloak:**
+https://github.com/kprasad99/spring-webflux-keycloak-angular/tree/master
+https://github.com/tamani-coding/fullstack-oauth2-angular-spring-boot-keycloak
+
+
+**webflux kafka**
+https://medium.com/@hakandagdelennnn/spring-web-flux-and-kafka-integration-building-receiver-and-producer-layers-with-dead-letter-17bd5a0aeb15
+https://dev.to/devcorner/building-a-reactive-system-with-kafka-and-spring-webflux-1f87
+https://www.youtube.com/watch?v=KQDTtvZMS9c
+
+
+
+
+
+
+todos:
+test: unit, int (testcontainers)
+microservices: webflux
+kafka com entre services
+auth: oauth + webflux + kaycloak
+deploy => k8s
+
+test: unit, int (angular)
+docker + k8s
+
+selenium: e2e
+
+
+curl -X POST 
+
+curl -H 'Content-Type: application/json' \
+     -d  '{"message" : "this is the first message i send in kafka spring version 22"}' \
+     -X POST \
+     http://localhost:8080/api/v1/messages/json
+
+
+
+bin/kafka-topics.sh --create --topic alibou --bootstrap-server localhost:9092*
+
+
+install kafka locally
+create a producer: spring app (spring reactive, lombok, spring apache kafka).
+create a consumer: spring app (spring web, lombok, spring apache kafka).
+
+create a kafka project: spring app (spring web, lombok, spring apache kafka).
+
+
+# build optimized docker image (add config => pom.xml)
+mvn spring-boot:build-image
+
+
+# deploy spring app => k8s
+
 
 
 angular
@@ -27,17 +85,6 @@ c'est quoi ? comment ca marche ?
 pros & cons ?
 
 
-explique moi en details spring webflux fonctionnement ? 
-comment le mettre en place avec dans le cas d'une application java spring microservices et monolith ?
-
-difference entre postgresql vs mariadb vs mongodb ?
-
-donne-moi des explications sur la mise en place de tests: unitaires, integrations, non-regression, e2e, ...?
-comment bien choisir sa strategies de testes ?
-comment selectionner le pourcentage de code coverage ?
-explique moi la qualimetrie (sonarqube, metrologie) ? comment bien selectionner ?
-
-comment bien selectionner l'architecture du projet
 
 
 Compétences clés attendues

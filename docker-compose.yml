@@ -1,12 +1,13 @@
-
 services:
   ui:
     build:
       context: ./angular-19
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile.dev
     ports:
-      - "4200:80"
+      - "4200:4200"
     restart: unless-stopped
+    volumes:
+      - ./angular-19/nginx.conf:/etc/nginx/conf.d/default.conf
     networks:
       - java-prom
 
