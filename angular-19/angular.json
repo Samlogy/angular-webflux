@@ -59,7 +59,21 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+                "fileReplacements": [
+                  {
+                    "replace": "./environments/environment.ts",
+                    "with": "./environments/environment.prod.ts"
+                  }
+                ]
+              },
+              "testing": {
+                "fileReplacements": [
+                  {
+                    "replace": "src/environments/environment.ts",
+                    "with": "src/environments/environment.testing.ts"
+                  }
+                ]
             },
             "development": {
               "optimization": false,
@@ -67,13 +81,16 @@
               "sourceMap": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
               "buildTarget": "Angular_19_tutorial:build:production"
+            },
+            "testing": {
+              "buildTarget": "Angular_19_tutorial:build:testing"
             },
             "development": {
               "buildTarget": "Angular_19_tutorial:build:development"
