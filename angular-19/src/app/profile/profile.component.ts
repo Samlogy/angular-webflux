@@ -28,6 +28,8 @@ export class ProfileComponent {
     this._sharedData.getUserData().subscribe(res => {
       this.apiData = res;
     })
+
+    this._sharedData.getTutorials().subscribe(res => console.log(res))
   }
 
   // userData = {

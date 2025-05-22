@@ -30,4 +30,11 @@ export class SharedDataService {
   getUserData() {
     return this._http.get(this.API_URL);
   }
+
+  getTutorials() {
+    // const url = 'http://localhost:8082/api/tutorials'
+    const url = '/api/tutorials'
+    const data = this._http.get(url);
+    return data
+  }
 }
