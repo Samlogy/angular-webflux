@@ -32,8 +32,7 @@ export class SharedDataService {
   }
 
   getTutorials() {
-    // const url = 'http://localhost:8082/api/tutorials'
-    const url = '/api/tutorials'
+    const url = 'http://localhost:8082/api/tutorials'
     const data = this._http.get(url);
     return data
   }

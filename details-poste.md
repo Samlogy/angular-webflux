@@ -1,6 +1,18 @@
 
 
-**TODOS:**
+**Roadmap:**
+prendre les 2 app spring webflux.
+tranformer en microservices => spring cloud
+comm: webclient async
+comm: kafka pub/sub
+Gestion des Erreurs et Résilience
+Testing des flux reactifs (testcontainers ?)
+Monitoring et Observabilité
+add auth => auth 2.0 + keycloak (oidc), rate limiting, cors, 
+pipeline ci/cd jenkins
+deploy k8s (helm charts)
+
+k8s ? scalabilité, résilience, fault tolerance, availability, performence, Reliability, security, ...
 
 
 Java/Angular resources:
